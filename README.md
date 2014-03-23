@@ -1,4 +1,4 @@
-# cPanel Disk Cleaner
+cPanel Disk Cleaner
 ========
 
 cPanel Disk Cleaner is a simple bash script to clean some trash from cpanel servers, reducing the disk space usage.
