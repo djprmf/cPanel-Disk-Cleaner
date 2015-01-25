@@ -18,6 +18,14 @@ yum clean all
 rm -f /var/log/*.gz
 rm -f /var/log/*.?
 
+## Remove /usr/local/apache/logs compressed logs and remove any variations (most of the times archived and useless) 
+rm -f /usr/local/apache/logs/*.gz
+rm -f /usr/local/apache/logs/*.?
+
+## Remove /usr/local/cpanel/logs compressed logs and remove any variations (most of the times archived and useless) 
+rm -f /usr/local/cpanel/logs/*.gz
+rm -f /usr/local/cpanel/logs/*.?
+
 ## Now moving on to /home
 # Remove all the Core files - Not needed
 rm -rf /home/core.*
@@ -40,10 +48,10 @@ rm -rf /home/cprestore
 cd /tmp
 for files in `ls`; do rm -f $files; done;
 
-# restart MySQL
-/scripts/restartsrv_mysql
+# restart MySQL - i leave this off by default, but could be enable to save more space
+# /scripts/restartsrv_mysql
 
-# restart Apache
+# restart Apache (just for a "spring clean)
 /scripts/restartsrv_apache
 
 ## Output again the space after the cleaning
