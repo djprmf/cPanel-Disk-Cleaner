@@ -26,6 +26,10 @@ rm -f /usr/local/apache/logs/*.?
 rm -f /usr/local/cpanel/logs/*.gz
 rm -f /usr/local/cpanel/logs/*.?
 
+## Remove the cloudlinux-collectl archives - If installed under CloudLinux
+## Can have a huge ammount of files not needed. Check before delete, if stats are important.
+rm -f /var/log/cloudlinux-collect/*.gz
+
 ## Now moving on to /home
 # Remove all the Core files - Not needed
 rm -rf /home/core.*
