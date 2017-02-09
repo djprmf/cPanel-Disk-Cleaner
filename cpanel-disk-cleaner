@@ -46,6 +46,8 @@ rm -rf /home/core.*
 rm -rf /home/cpeasyapache
 # Remove old MySQL install files
 rm -rf /home/MySQL-install
+# Remove cPanel File Manager temp files
+rm -fv /home/*/tmp/Cpanel_*
 
 # This will clean all the backup files generated under the users accounts.
 # Useful if the backup feature in cPanel is enabled and users are not deleting old backups
