@@ -1,0 +1,8 @@
+title: Cpanel Disk Cleaner
+description: Just a quick and simple cpanel cleaning script
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-hacker
+
+gems:
+  - jekyll-mentions
