@@ -25,6 +25,10 @@ rm -f /var/log/*.gz
 rm -f /var/log/*.?
 rm -f /var/log/archive/*.gz
 
+## Remove logs from NGINX. This could be disable if Nginx is not installed in the server. 
+rm -f /var/log/nginx/*.gz
+rm -f /var/log/nginx/*.?
+
 ## Remove /usr/local/apache/logs compressed logs and remove any variations (most of the times archived and useless) 
 rm -f /usr/local/apache/logs/*.gz
 rm -f /usr/local/apache/logs/*.?
