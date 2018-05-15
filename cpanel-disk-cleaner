@@ -24,6 +24,7 @@ yum clean all
 rm -f /var/log/*.gz
 rm -f /var/log/*.?
 rm -f /var/log/archive/*.gz
+rm -f /var/log/audit/*.?
 
 ## Remove logs from NGINX. This could be disable if Nginx is not installed in the server. 
 rm -f /var/log/nginx/*.gz
