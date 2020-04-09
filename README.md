@@ -14,7 +14,7 @@ This script is NOT intended to ALL cPanel servers, or at least all the commands 
 The brain must be used before run the script "just for fun".
 
 This should be safe for standard cPanel instalations, in CentOS 5/6/7 and Cloudlinux. 
-Also should be safe for ALL the cPanel versions.
+Also should be safe for ALL the cPanel versions - but see details below.
 
 ## How Run the script
 
